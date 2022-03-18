@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 function App() {
   const [articulos, setArticulos] = useState([])
   useEffect(() => {
-    fetch('http://scratchya.com.ar/react/datos.php')
+    fetch('https://scratchya.com.ar/react/datos.php')
       .then((response) => {
         return response.json()
       })
